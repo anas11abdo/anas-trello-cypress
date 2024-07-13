@@ -14,6 +14,8 @@ before("",()=>{
     cy.LoginToTrello();
     cy.wait(3000);
     cy.createBoard();
+    cy.wait(2000);
+    cy.screenshot({capture:"fullPage"});
     cy.createList(listname,0);
     cy.wait(2000);
     deleteCardActions.createCard(cardname);

@@ -7,6 +7,8 @@ module.exports = defineConfig({
   video : true,
   trashAssetsBeforeRuns : false,
   chromeWebSecurity:false,
+  screenshotOnRunFailure : false,
+  screenshotsFolder : "AnasScreenshots",
    setupNodeEvents(on, config) {
      on("file:preprocessor", cucumber());
    },
